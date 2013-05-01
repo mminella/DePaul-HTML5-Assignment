@@ -24,6 +24,22 @@
 				height:100%;
 				font-family: Arial, sans-serif;
 			}
+			h1 {
+				font-size: 35px;
+				font-weight: bold;
+				padding: 0 0 10px 0;
+				text-shadow: black 0.1em 0.1em 0.2em;
+			}
+			p {
+				padding: 0 0 10px 0;
+			}
+			li {
+			    list-style-type: decimal;
+			    list-style-position: inside;
+   			}
+   			article {
+				position: absolute;
+   			}
 			.navigation {
 			    position:fixed;
 			    z-index:1;
@@ -63,11 +79,6 @@
 			    position: relative;
 			    box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
 			}
-			.depaul_logo {
-				height: 300px;
-				transform: rotate(-20deg);
-				float: left;
-			}
 			#intro {
 				color: white;
 				background-image: linear-gradient(#052C6E, #4479D4);
@@ -75,16 +86,23 @@
 			#intro img {
 				position: absolute;
 				top: 100px;
-				right: 90%;
+				right: 1050px;
+				height: 300px;
+				transform: rotate(-20deg);
 			}
 			#intro article {
-				position: absolute;
 				top: 300px;
-				right: 25%;
-				width: 400px;
+				right: 20%;
+				width: 500px;
 			}
 			#grading {
-				background-image: linear-gradient(#3DA028, #89EC6A);
+				color: white;
+				background-image: linear-gradient(#3C6300, #5c9900);
+			}
+			#grading article {
+				top: 300px;
+				right: 30%;
+				width: 700px;
 			}
 			#example {
 				background-image: linear-gradient(#FFBB00, #FFCC40);
@@ -105,7 +123,7 @@
 			<img class="logo" src="./img/HTML5_Logo_512.png" alt="HTML5 logo"  data-stellar-ratio="1.5" />
 		</section>
 		<section id="intro" class="slide" data-slide="2" data-stellar-background-ratio="0.5">
-			<img class="depaul_logo" src="./img/DepaulLogo.png" alt="DePaul Logo" data-stellar-ratio="2.7" data-stellar-vertical-offset="-102">
+			<img src="./img/DepaulLogo.png" alt="DePaul Logo" data-stellar-ratio="2.7" data-stellar-vertical-offset="-102">
 			<article>
 				<header>
 					<h1>DePaul HTML5 Assignment</h1>
@@ -124,30 +142,32 @@
 			</article>
 		</section>
 		<section id="grading" class="slide" data-slide="3" data-stellar-background-ratio="1">
-			<p>Before we get into the nitty gritty of things, let's review how this assignment will be graded:
-				<table>
-					<tr>
-						<td>Item</td>
-						<td>Points</td>
-					</tr>
-					<tr>
-						<td>Correct use of HTML5/CSS3 elements</td>
-						<td>50</td>
-					</tr>
-					<tr>
-						<td>Correct use of HTML5/CSS3 APIs</td>
-						<td>30</td>
-					</tr>
-					<tr>
-						<td>Publishing the site to Github.com</td>
-						<td>10</td>
-					</tr>
-					<tr>
-						<td>Creativity</td>
-						<td>10</td>
-					</tr>
-				</table>
-			</p>
+			<article>
+				<p>Before we get into the nitty gritty of things, let's review how this assignment will be graded:
+					<table>
+						<tr>
+							<td>Item</td>
+							<td>Points</td>
+						</tr>
+						<tr>
+							<td>Correct use of HTML5/CSS3 elements</td>
+							<td>50</td>
+						</tr>
+						<tr>
+							<td>Correct use of HTML5/CSS3 APIs</td>
+							<td>30</td>
+						</tr>
+						<tr>
+							<td>Publishing the site to Github.com</td>
+							<td>10</td>
+						</tr>
+						<tr>
+							<td>Creativity</td>
+							<td>10</td>
+						</tr>
+					</table>
+				</p>
+			</article>
 		</section>
 		<section id="example" class="slide" class="slide" data-slide="4" data-stellar-background-ratio="1">
 			<p>
