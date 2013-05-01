@@ -2,8 +2,176 @@
 <html>
 	<head>
 		<title>DePaul HTML5 Assignment</title>
+		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/js.js"></script>
+		<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+		<script type="text/javascript" src="js/waypoints.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<style type="text/css">
+			html,body{
+				width:100%;
+				height:100%;
+			}
+			.navigation {
+			    position:fixed;
+			    z-index:1;
+			    top:20px;
+			}
+			.navigation li {
+			    color:#333333;
+			    display:block;
+			    padding: 0 10px;
+			    line-height:30px;
+			    margin-bottom:2px;
+			    font-weight:bold;
+			    -webkit-transition: all .2s ease-in-out;
+			    border-bottom:1px solid black;
+			    text-align:left;
+			    width:75px;
+			}
+			.navigation li:hover,
+			.active {
+			    font-size:25px;
+			    cursor:pointer;
+			    width:100px!important;
+			}
+			.logo{
+				position:fixed;
+				top:50%;
+				left:50%;
+				width:446px;
+				margin-top:-41px;
+				margin-left:-223px;
+				z-index:1;
+			}
+			.slide {
+			    background-attachment: fixed;
+			    width:100%;
+			    height:100%;
+			    position: relative;
+			    box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+			}
+			#intro {
+				background-image: linear-gradient(#052C6E, #4479D4);
+			}
+			#grading {
+				background-image: linear-gradient(#3DA028, #89EC6A);
+			}
+			#example {
+				background-image: linear-gradient(#FFBB00, #FFCC40);
+			}
+		</style>
 	</head>
 	<body>
-		<h1>This is your homework.</h1>
+		<navigation>
+			<ul class="navigation">
+				<li data-slide="2">Intro</li>
+				<li data-slide="3">Grading</li>
+				<li data-slide="4">Example</li>
+				<li data-slide="5">Git</li>
+				<li data-slide="6">Github.com</li>
+			</ul>
+		</navigation>
+		<article id="logo" class="slide" data-slide="1" data-stellar-background-ratio="0.5">
+			<img class="logo" src="./img/HTML5_Logo_512.png" alt="HTML5 logo"  data-stellar-ratio=".35" data-stellar-vertical-offset="455"/>
+		</article>
+		<article id="intro" class="slide" data-slide="2" data-stellar-background-ratio="0.5">
+			<header>
+				<h1>DePaul HTML5 Assignment</h1>
+			</header>
+			<p>
+				Welcome to the DePaul HTML5 Assignment.  The goals of this assignment are to demonstrate the HTML5 and CSS3 skills you have aquired during this course.
+			</p>
+			<p>
+				For this assignment, we're going to build an HTML5 web page and publish it onto the internet using Github's Pages feature.  To complete the assignment you will be required to do the following:
+				<ol>
+					<li>Create an HTML5 based web page.</li>
+					<li>Publish it to Github.com.</li>
+					<li>Submit the link to your web page for grading.</li>
+				</ol>
+			</p>
+		</article>
+		<article id="grading" class="slide" data-slide="3" data-stellar-background-ratio="1">
+			<p>Before we get into the nitty gritty of things, let's review how this assignment will be graded:
+				<ol>
+					<li>50% for correct use of HTML5/CSS3 elements</li>
+					<li>30% for correct use of HTML5/CSS3 APIs</li>
+					<li>10% for publishing on Github.com</li>
+					<li>10% for creativity</li>
+				</ol>
+			</p>
+		</article>
+		<article id="example" class="slide" class="slide" data-slide="4" data-stellar-background-ratio="1">
+			<p>
+				Let's take a look at the site we are going to be building:
+				<figure>
+					<img src="./img/example.png" alt="example layout"/>
+				</figure>
+			</p>
+		</article>
+		<article class="slide" data-slide="5" data-stellar-background-ratio="2.5">
+			<p>
+				To get started on the assignment, we'll need to install git and create a Github.com account.
+			</p>
+			<p>
+				Git is a distributed version control system (DVCS) that allows you to store and version source code effeciently.  The use of a VCS is common in enterprise development, so you should become familiar with it.  To install git:
+				<br><br>
+				On Windows:
+				<ol>
+					<li>Download the latest version of the git client here: http://git-scm.com/download/win and follow the related instructions.</li>
+					<li>To test your installation, from a command prompt, type the following and press enter:
+						<pre>$ git --version</pre>
+					If you see something along the lines of "git version 1.7.10.2"...you have successfully installed git.</li>
+				</ol>
+				<br><br>
+				On Mac:
+				<ol>
+					<li>Download the latest version of the git client here: http://git-scm.com/download/mac and follow the related instructions.</li>
+					<li>To test your installation, from a terminal window, type the following and press enter: 
+						<pre>$ git --version</pre>
+					If you see something along the lines of "git version 1.7.10.2"... you have successfully installed git.</li>
+				</ol>
+			</p>
+		</article>
+		<article class="slide" data-slide="6" data-stellar-background-ratio="1">
+			<p>
+				With git now installed, we need to create an account on Github.com.  Github.com is a cloud service that allows you to publish code there for anyone to contribute to.  We'll be using their Pages feature to publish our HTML5 website.  To do that, go to Github.com and follow the instructions to sign up for an account.
+			</p>
+		</article>
+		<article class="slide" data-slide="6" data-stellar-background-ratio="1">
+			<p>
+				With our Github.com account created, we need to create our repository.  This is where our files will be placed while we develop them.  We will also use the repository as a way to deploy our files.
+			</p>
+			<p>
+				To create a repository, you will go to Github.com and login.  Once you are logged in, you will click the Create a new repo button.  All that is required is that you provide a name for your repository.
+			</p>
+		</article>
+		<article class="slide" data-slide="7" data-stellar-background-ratio="1">
+			<p>
+				To use your Github.com repository, you will need to clone it to your computer.  To clone it, open a command prompt (Terminal on a Mac) and execute the following command:
+				<pre>$ git clone https://github.com/&lt;USERNAME&gt;/&lt;REPONAME&gt;.git</pre>
+				Where &lt;USERNAME&gt; is your Github.com username and &lt;REPONAME&gt; is the name of the repository you created in the previous step.
+			</p>
+		</article>
+		<article class="slide" data-slide="8" data-stellar-background-ratio="1">
+			<p>
+				With your repository cloned, we'll now create the branch that the code for your assignment will live in.  To do this, we need to create an "orphaned" branch (a branch without a parent).  To do this, from inside your repository, execute the following command:
+				<pre>$ git checkout --orphan gh-pages</pre>
+				This will create a new branch for your repository called gh-pages that Github.com will use to publish your website.
+			</p>
+		</article>
+		<article class="slide" data-slide="9" data-stellar-background-ratio="1">
+			<p>
+				In the root of your repository, create a new file named index.html.  Enter some HTML in the file and save it.  With your new HTML file created, we need to commit it to your repository (save it) and then push it to Github.com so it is published.
+			</p>
+			<p>
+				To commit your file, execute the following command:
+				<pre>$ git commit -a -m "Initial commit"</pre>
+				The "Initial commit" is the comment describing your changes for this commit.  We can now push (deploy) our site to Github.com with the command:
+				<pre>$ git push origin gh-pages</pre>
+				In the above command, we are telling git to push our changes to origin (the place we cloned our repository from) and we are specifying that we want to push the gh-pages branch.  Once this has completed (you will be prompted for your Github.com username and password), Github will deploy the site to the url http://<USERNAME>.github.io/<REPONAME>/.  This may take up to 10 minutes to update.
+			</p>
+		</article>
 	</body>
 </html>

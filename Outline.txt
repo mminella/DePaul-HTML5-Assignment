@@ -1,0 +1,43 @@
+Outline
+
+Home slide
+==================================
+Welcome to the homework for the HTML5 section of your Web Development with JavaScript and HTML5 course.  For this assignment, we're going to build an HTML5 web page and publish it onto the internet using Github's Pages feature.  To complete the assignment you will be required to do the following:
+
+1.  Create an HTML5 based web page.
+2.  Publish it to Github.com.
+3.  Submit the link to your web page for grading.
+
+Sound easy enough?  Before we get into the nitty gritty of things, let's review how this assignment will be graded:
+
+50% for correct use of HTML5/CSS3 elements
+30% for correct use of HTML5/CSS3 APIs
+10% for publishing on Github.com
+10% for creativity
+
+The site we will be building will look like this:
+// insert screen shot of shell
+
+Describe example
+
+To get started on the assignment, we'll need to install git and create a Github.com account.
+
+Git is a distributed version control system (DVCS) that allows you to store and version source code effeciently.  The use of a VCS is common in enterprise development, so you should become familiar with it.  To install git:
+
+On Windows:
+1. Download the latest version of the git client here: http://git-scm.com/download/win and follow the related instructions.
+2. To test your installation, from a command prompt, type the following and press enter:
+git --version
+If you see something along the lines of "git version 1.7.10.2"...you have successfully installed git.
+
+On Mac:
+1. Download the latest version of the git client here: http://git-scm.com/download/mac and follow the related instructions.
+2. To test your installation, from a terminal window, type the following and press enter: 
+git --version
+If you see something along the lines of "git version 1.7.10.2"... you have successfully installed git.
+
+With git now installed, we need to create an account on Github.com.  Github.com is a cloud service that allows you to publish code there for anyone to contribute to.  We'll be using their Pages feature to publish our HTML5 website.  To do that, go to Github.com and follow the instructions to sign up for an account.
+
+With our Github.com account created, we need to create our repository.  This is where our files will be placed while we develop them.  We will also use the repository as a way to deploy our files.
+
+To create a repository, you will go to Github.com and login.  Once you are logged in, you will click the Create a new repo button.  All that is required is that you provide a name for your repository.
