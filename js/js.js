@@ -19,7 +19,7 @@ jQuery(document).ready(function ($) {
         // else If the user scrolls down change the navigation link that has the same data-slide attribute as the slide to active and
         //remove the active class from the next navigation link
         else {
-            $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
+            $('.navigation li[data-slide="' + (dataslide) + '"]').addClass('active').next().removeClass('active');
         }
     });
     //waypoints doesnt detect the first slide when user scrolls back up to the top so we add this little bit of code, that removes the class

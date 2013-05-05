@@ -40,6 +40,9 @@
    			article {
 				position: absolute;
    			}
+   			table {
+   				border-collapse: collapse;
+   			}
 			.navigation {
 			    position:fixed;
 			    z-index:1;
@@ -65,9 +68,10 @@
 			}
 			.logo{
 				position:fixed;
-				top:50%;
+				top:30%;
 				left:50%;
 				width:446px;
+				height: 466px;
 				margin-top:-41px;
 				margin-left:-223px;
 				z-index:1;
@@ -101,10 +105,45 @@
 			}
 			#grading article {
 				top: 300px;
-				right: 30%;
-				width: 700px;
+				right: 10%;
+				width: 600px;
+			}
+			#grading img {
+				position: absolute;
+				top: 200px;
+				right: 55%;
+				height: 413px;
+				width: 352px;
+			}
+			#grading td{
+				border: 1px solid white;
+			}
+			#grading table {
+				width: 500px;
+			}
+			#grading th {
+				font-weight: bold;
+				background-color: white;
+				color: black;
+				border: 1px solid white;
+			}
+			#grading td:nth-child(even) {
+				text-align: center;
 			}
 			#example {
+				background-image: linear-gradient(#854242, #C28C8C);
+			}
+			#example img {
+				height: 300px;
+			}
+			#example figure {
+				float: left;
+			}
+			#example article {
+				width: 850px;
+				text-align: center;
+			}
+			#git_install {
 				background-image: linear-gradient(#FFBB00, #FFCC40);
 			}
 		</style>
@@ -122,7 +161,7 @@
 		<section id="logo" class="slide" data-slide="1">
 			<img class="logo" src="./img/HTML5_Logo_512.png" alt="HTML5 logo"  data-stellar-ratio="1.5" />
 		</section>
-		<section id="intro" class="slide" data-slide="2" data-stellar-background-ratio="0.5">
+		<section id="intro" class="slide" data-slide="2">
 			<img src="./img/DepaulLogo.png" alt="DePaul Logo" data-stellar-ratio="2.7" data-stellar-vertical-offset="-102">
 			<article>
 				<header>
@@ -141,13 +180,17 @@
 				</p>
 			</article>
 		</section>
-		<section id="grading" class="slide" data-slide="3" data-stellar-background-ratio="1">
+		<section id="grading" class="slide" data-slide="3">
+			<img src="./img/A.png" alt="DePaul Logo" data-stellar-ratio="4" data-stellar-vertical-offset="0">
 			<article>
+				<header>
+					<h1 style="position:absolute;" data-stellar-ratio="2" data-stellar-vertical-offset="0">Grading</h1>
+				</header>
 				<p>Before we get into the nitty gritty of things, let's review how this assignment will be graded:
 					<table>
 						<tr>
-							<td>Item</td>
-							<td>Points</td>
+							<th>Item</th>
+							<th>Points</th>
 						</tr>
 						<tr>
 							<td>Correct use of HTML5/CSS3 elements</td>
@@ -169,15 +212,24 @@
 				</p>
 			</article>
 		</section>
-		<section id="example" class="slide" class="slide" data-slide="4" data-stellar-background-ratio="1">
-			<p>
-				Let's take a look at the site we are going to be building:
-				<figure>
-					<img src="./img/example.png" alt="example layout"/>
+		<section id="example" class="slide" data-slide="4">
+			<article>
+				<h1>The Assignment</h1>
+				<p>
+					The website you will be required to create is a two page website consisting of a home page and a detail page.  Each page will be required to work correctly on a desktop browser as well as a tablet and smart phone.  Below is a breakdown on the points awarded for each requirement.
+				</p>
+<!--				<figure>
+					<img src="./img/desktop.png" alt="Barrel Desktop"/>
+					<figcaption>Barrel's website on a desktop browser</figcaption>
 				</figure>
-			</p>
+				<figure>
+					<img src="./img/iphone.png" alt="Barrel iOS"/>
+					<figcaption>Barrel's website on an iPhone</figcaption>
+				</figure> -->
+			</article>
 		</section>
-		<section class="slide" data-slide="5" data-stellar-background-ratio="2.5">
+		<section id="git_install" class="slide" data-slide="5">
+			<article>
 			<p>
 				To get started on the assignment, we'll need to install git and create a Github.com account.
 			</p>
@@ -201,6 +253,7 @@
 				</ol>
 			</p>
 			<p>For more information on git, check out: <a href="http://git-scm.com">Git</a></p>
+			</article>
 		</section>
 		<section class="slide" data-slide="6" data-stellar-background-ratio="1">
 			<p>
